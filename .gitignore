@@ -1,3 +1,9 @@
+
+# Project Specific
+**/bak/
+**/.vscode/
+
+# Python CI Specific
 .tox
 _test_run/
 bin/
