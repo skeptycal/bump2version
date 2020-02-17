@@ -11,7 +11,7 @@
 * [zest.releaser](https://pypi.org/project/zest.releaser/) manages
   your Python package releases and keeps the version number in one location.
 
-* [setuptools-scm](https://pypi.org/project/setuptools-scm/) relies on 
+* [setuptools-scm](https://pypi.org/project/setuptools-scm/) relies on
   version control tags and the state of your working copy to determine
   the version number.
 
@@ -24,17 +24,17 @@
   semantic versioning.
 
 * [python-semantic.release](https://github.com/relekang/python-semantic-release)
-  automatically bumps your (semantic) version number based on the 
+  automatically bumps your (semantic) version number based on the
   types of commits (breaking/new/bugfix) in your source control.
-  
-  
+
+
 ## Change log building
-  
+
 * [towncrier](https://pypi.org/project/towncrier/) assembles a changelog
   file from multiple snippets found in individual (merge) commits.
-  
+
 * [releases](https://pypi.org/project/releases/) helps build a Sphinx
   ReStructuredText changelog.
-  
+
 * [gitchangelog](https://pypi.org/project/gitchangelog/) searches
   the git commit history to make a configurable changelog file.

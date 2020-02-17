@@ -115,7 +115,7 @@ If no `.bumpversion.cfg` exists, `bump2version` will also look into
 
 General configuration is grouped in a `[bumpversion]` section.
 
-#### `current_version` 
+#### `current_version`
   _**required**_<br />
   **default**: none
 
@@ -158,7 +158,7 @@ General configuration is grouped in a `[bumpversion]` section.
 
   The name of the tag that will be created. Only valid when using `--tag` / `tag = True`.
 
-  This is templated using the [Python Format String Syntax](https://docs.python.org/3/library/string.html#format-string-syntax).  
+  This is templated using the [Python Format String Syntax](https://docs.python.org/3/library/string.html#format-string-syntax).
   Available in the template context are `current_version` and `new_version`
   as well as `current_[part]` and `new_[part]` (e.g. '`current_major`'
   or '`new_patch`').
@@ -166,7 +166,7 @@ General configuration is grouped in a `[bumpversion]` section.
   You can also use the variables `now` or `utcnow` to get a current timestamp. Both accept
   datetime formatting (when used like as in `{now:%d.%m.%Y}`).
 
-  Also available as command-line flag `tag-name`.  Example usage:  
+  Also available as command-line flag `tag-name`.  Example usage:
   `bump2version --tag-name 'release-{new_version}' patch`
 
 #### `commit = (True | False)`
@@ -192,15 +192,15 @@ General configuration is grouped in a `[bumpversion]` section.
 
   The commit message to use when creating a commit. Only valid when using `--commit` / `commit = True`.
 
-  This is templated using the [Python Format String Syntax](https://docs.python.org/3/library/string.html#format-string-syntax).  
+  This is templated using the [Python Format String Syntax](https://docs.python.org/3/library/string.html#format-string-syntax).
   Available in the template context are `current_version` and `new_version`
   as well as `current_[part]` and `new_[part]` (e.g. '`current_major`'
   or '`new_patch`').
-  In addition, all environment variables are exposed, prefixed with `$`.  
+  In addition, all environment variables are exposed, prefixed with `$`.
   You can also use the variables `now` or `utcnow` to get a current timestamp. Both accept
   datetime formatting (when used like as in `{now:%d.%m.%Y}`).
-  
-  Also available as command-line flag `--message`.  Example usage:  
+
+  Also available as command-line flag `--message`.  Example usage:
   `bump2version --message '[{now:%Y-%m-%d}] Jenkins Build {$BUILD_NUMBER}: {new_version}' patch`)
 
 #### `commit_args =`
@@ -314,7 +314,7 @@ This configuration is in the section: `[bumpversion:file:…]`
   Available in the template context are parsed values of the named groups
   specified in `parse =` as well as all environment variables (prefixed with
   `$`).
-  
+
   Can be specified multiple times, bumpversion will try the serialization
   formats beginning with the first and choose the last one where all values can
   be represented like this:
@@ -414,7 +414,7 @@ For example, if you are updating the minor number and looking for the new versio
 
 ## Using bumpversion to maintain a go.mod file within a Go project
 
-In a module-aware Go project, when you create a major version of your module beyond v1, your module name will need 
+In a module-aware Go project, when you create a major version of your module beyond v1, your module name will need
 to include the major version # (e.g. `github.com/myorg/myproject/v2`).
 
 You can use bump2version to maintain the major version # within the go.mod file by using the `parse` and `serialize`
